@@ -1,0 +1,79 @@
+{
+ "run_date": "2026-10-30",
+ "gleif_golden_copy": "2026-10-30T00:00:00Z",
+ "population_all_statuses": 6039,
+ "registration_status": {
+  "ISSUED": 4677,
+  "LAPSED": 605,
+  "DUPLICATE": 20,
+  "RETIRED": 737
+ },
+ "live_book_issued_or_lapsed": 5282,
+ "live_by_legal_form": {
+  "AIF sub-scheme": 922,
+  "Mutual Fund": 92,
+  "Mutual Fund sub-scheme": 1620,
+  "Provident/Superannuation/Gratuity fund": 1288,
+  "Alternative Investment Fund": 1197,
+  "Other (free text)": 145,
+  "OYDA": 14,
+  "XXCZ": 1,
+  "8ZLF": 2,
+  "W9FI": 1
+ },
+ "exceptions_by_check": {
+  "C1 LEI lapsed (renewal overdue)": 605,
+  "C10 Same normalised legal name as another live LEI": 10,
+  "C2 ISSUED but renewal date passed": 3,
+  "C3 Entity-supplied only: not validated against a registry": 2027,
+  "C4 Sub-scheme with no umbrella-fund and no fund-manager link": 204,
+  "C5 No fund-manager relationship recorded": 2321,
+  "C6 Entity status not ACTIVE": 12,
+  "C7b PIN code inconsistent with state": 3,
+  "C7c Legal-address state missing": 44,
+  "C9 Legal name has stray spaces or non-ASCII characters": 11
+ },
+ "records_with_any_exception": 2941,
+ "records_needing_action": 2420,
+ "lapsed_days_overdue": {
+  "median": 678,
+  "over_365": 418,
+  "max": 3561
+ },
+ "lapsed_and_entity_supplied_only": 355,
+ "entity_supplied_only_by_form": {
+  "AIF sub-scheme": 445,
+  "Provident/Superannuation/Gratuity fund": 1288,
+  "Other (free text)": 81,
+  "Alternative Investment Fund": 170,
+  "Mutual Fund sub-scheme": 9,
+  "Mutual Fund": 19,
+  "OYDA": 12,
+  "8ZLF": 2,
+  "W9FI": 1
+ },
+ "duplicate_name_groups": 5,
+ "records_in_duplicate_groups": 10,
+ "sdn_entity_names_screened": 21389,
+ "screening_alerts_naive": 2228,
+ "screening_alerts_after_guard": 18,
+ "clients_with_naive_alert": 1262,
+ "clients_with_guarded_alert": 17,
+ "guard_recall_test_on_known_sdn_names": {
+  "exact name, punctuation/case changed": {
+   "n": 300,
+   "naive_caught": 300,
+   "guard_caught": 299
+  },
+  "name + ' FUND I' appended": {
+   "n": 300,
+   "naive_caught": 300,
+   "guard_caught": 300
+  },
+  "one adjacent-letter swap in the longest distinctive word": {
+   "n": 300,
+   "naive_caught": 273,
+   "guard_caught": 273
+  }
+ }
+}
